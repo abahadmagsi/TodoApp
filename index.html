@@ -1,29 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Todo App</title>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
-    <link
-      rel="stylesheet"
-      href="style1.css"
-      type="text/css"
-      media="screen"
-      charset="utf-8"
-    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your todo</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-      <p>
-        <label for="new-task">Add Item</label
-        ><input id="new-task" type="text" /><button>Add</button>
-      </p>
-
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks"></ul>
-
-      <h3>Completed</h3>
-      <ul id="completed-tasks"></ul>
+      <div>
+        <h3>Abdul Ahad Magsi</h3>
+        <h3>KWOWCBC4345</h3>
+      </div>
+      <div class="inpDiv">
+        <input type="text" placeholder="Enter your todo" id="inp" />
+        <button id="addBtn" class="btn" onclick="addItem()">Add</button>
+        <button id="resetBtn" class="btn" onclick="deleteAll()">Reset</button>
+      </div>
+      <div class="ulDiv">
+        <ul id="listItems">
+          <li class="liDiv">
+            <h2>Text</h2>
+            <div class="btnDiv" id="btnDiv">
+              <button class="btn">Edit</button>
+              <button class="btn">Delete</button>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <script type="text/javascript" src="app1.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

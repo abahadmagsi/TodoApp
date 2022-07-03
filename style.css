@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    min-width: 60%;
+
+}
+#inp, .inp{
+    margin: 10px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.btn{
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: darkslategrey;
+    color: aliceblue;
+}
+
+.inpDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px solid grey;
+
+}
+
+ul{
+    list-style: none;
+    overflow-y: scroll;
+    max-height: 600px;
+    flex-wrap: wrap;
+
+}
+
+.liDiv{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px dashed grey;
+    /* max-width: 90%; */
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.btnDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    align-self: center;
+    width: 40%;
+}
+
+ul> li> h2{
+    min-width:50%;
+    width: 60%;
+    font-weight: lighter;
+    overflow-wrap: break-word;
+    font-size: medium;
+}
+
+
